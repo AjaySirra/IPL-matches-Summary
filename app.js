@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+app.use(express.json());
 const path = require("path");
 const dbPath = path.join(__dirname, "cricketMatchDetails.db");
 const { open } = require("sqlite");
